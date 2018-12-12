@@ -10,7 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
+  line-height: 1.3;
+  font-family: "Crimson Text";
   color: #222;
 }
 
@@ -18,32 +19,132 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 article {
   max-width: 43em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 1em;
 }
 
 article h1 {
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 article header {
   border-bottom: 1px solid #999;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  padding-top: 1.3rem;
 }
 
 article header p {
   font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 
 article > p:last-child {
   border-bottom: 1px solid #999;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1.3rem;
 }
 
 blockquote {
   max-width: 24em;
   color: #555;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding: 0;
 }
 
 .quote {
   color: #999;
+}
+
+article ol {
+  padding-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+article p {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  article header {
+    margin-bottom: 1.4rem;
+    padding-top: 1.4rem;
+  }
+
+  article header p {
+    margin-bottom: 1.4rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.4rem;
+  }
+
+  article ol {
+    margin-bottom: 1.4rem;
+  }
+
+  article p {
+    margin-bottom: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  article header {
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  article header p {
+    margin-bottom: 1.5rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  article ol {
+    margin-bottom: 1.5rem;
+  }
+
+  article p {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
